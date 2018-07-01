@@ -7,8 +7,8 @@ function takeANumber(queue, name){
 
 function nowServing(queue){
     var name = queue.shift()
-    console.log(name)
     if (name === undefined){
         return 'There is nobody waiting to be served!'
     } else return `Currently serving ${name}.`
 }
+
