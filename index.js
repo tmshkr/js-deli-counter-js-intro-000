@@ -6,10 +6,10 @@ function takeANumber(queue, name){
 }
 
 function nowServing(queue){
-    var name = queue.shift()
-    if (name === undefined)
+    if (queue.length === 0)
         return 'There is nobody waiting to be served!'
-    else return `Currently serving ${name}.`
+    var name = queue.shift()
+    return `Currently serving ${name}.`
 }
 
 function currentLine(queue){
