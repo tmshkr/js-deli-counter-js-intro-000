@@ -19,7 +19,7 @@ function currentLine(queue){
     for (let i = 0; i < queue.length; i++){
         queueString += queue[i]
         if (i < queue.length - 1)
-        queueString += `, ${i + 1}. `
+        queueString += `, ${i + 2}. `
     }
     return queueString
 }
