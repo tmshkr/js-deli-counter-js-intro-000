@@ -11,3 +11,14 @@ function nowServing(queue){
         return 'There is nobody waiting to be served!'
     else return `Currently serving ${name}.`
 }
+
+function currentLine(queue){
+    if (queue.length === 0)
+        return 'The line is currently empty.'
+    var queueString = 'The line is currently: 1. '
+    for (let i = 0; i < queue.length; i++){
+        queueString += queue[i]
+        if (i < queue.length - 1)
+        
+    }
+}
