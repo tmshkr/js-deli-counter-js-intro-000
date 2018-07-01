@@ -6,8 +6,8 @@ function takeANumber(queue, name){
 }
 
 function nowServing(){
-    var name = katzDeli.shift()
+    var name = deliLine.shift()
     if (name === undefined)
         return 'There is nobody waiting to be served!'
-    else return name
+    else return `Currently serving ${name}.`
 }
