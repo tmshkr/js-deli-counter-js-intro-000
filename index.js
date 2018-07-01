@@ -5,8 +5,8 @@ function takeANumber(queue, name){
     return `Welcome, ${name}. You are number ${position} in line.`
 }
 
-function nowServing(deliLine){
-    var name = deliLine.shift()
+function nowServing(queue){
+    var name = queue.shift()
     if (name === 'undefined')
         return 'There is nobody waiting to be served!'
     else return `Currently serving ${name}.`
