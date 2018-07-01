@@ -1,4 +1,5 @@
 var katzDeli = []
+var deliLine = []
 
 function takeANumber(queue, name){
     var position = queue.push(name)
