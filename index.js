@@ -1,5 +1,6 @@
 var katzDeli = []
 
 function takeANumber(queue, name){
-    return queue.push(name)
+    var position = queue.push(name)
+    return `Welcome, ${name}. You are number ${position} in line.`
 }
